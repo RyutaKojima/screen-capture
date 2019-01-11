@@ -1,0 +1,30 @@
+{
+  "name": "web capture",
+  "description" : "capture current web page",
+  "version": "1.0",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_popup": "html/help.html",
+    "default_icon": "hello_extensions.png"
+  },
+  "permissions": [
+    "https://*.google.com/",
+    "activeTab",
+    "desktopCapture"
+  ],
+  "background": {
+    "persistent": false,
+    "scripts": [
+      "js/background_script.js"
+    ]
+  },
+  "commands": {
+    "capture-screenshot": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+S",
+        "mac": "MacCtrl+Shift+S"
+      },
+      "description": "Save the current screen capture"
+    }
+  }
+}
