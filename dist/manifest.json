@@ -8,9 +8,8 @@
     "default_icon": "hello_extensions.png"
   },
   "permissions": [
-    "https://*.google.com/",
     "activeTab",
-    "desktopCapture"
+    "tabs"
   ],
   "background": {
     "persistent": false,
