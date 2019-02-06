@@ -3,9 +3,14 @@
   "description" : "capture current web page",
   "version": "1.0",
   "manifest_version": 2,
+  "icons": {
+    "16": "img/icon_16.png",
+    "48": "img/icon_48.png",
+    "128": "img/icon_128.png"
+  },
   "browser_action": {
     "default_popup": "html/help.html",
-    "default_icon": "hello_extensions.png"
+    "default_icon": "img/icon_16.png"
   },
   "permissions": [
     "activeTab",
